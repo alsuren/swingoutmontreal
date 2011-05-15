@@ -10,15 +10,15 @@ class Venue < ActiveRecord::Base
   
   def compass_text
     title = case compass
-      when "C" then "Central London" 
-      when "N" then "North London"
-      when "S" then "South London"
-      when "E" then "East London"
-      when "W" then "West London"
-      when "NE" then "North East London"
-      when "NW" then "North West London"
-      when "SE" then "South East London"
-      when "SW" then "South West London"
+      when "C" then "Central Montréal" 
+      when "N" then "North Montréal"
+      when "S" then "South Montréal"
+      when "E" then "East Montréal"
+      when "W" then "West Montréal"
+      when "NE" then "North East Montréal"
+      when "NW" then "North West Montréal"
+      when "SE" then "South East Montréal"
+      when "SW" then "South West Montréal"
     else 
       UNKNOWN_AREA
     end  

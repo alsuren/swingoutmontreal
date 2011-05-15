@@ -9,18 +9,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="Content-Language" content="en-GB" />
     <meta name="author" content="Duncan Stuart"/>
-    <meta name="description" content="Swing Out London is a listing of weekly Lindy Hop classes, regular socials, swing gigs and vintage clubs" />
+    <meta name="description" content="Swing Out Montréal is a listing of weekly Lindy Hop classes, regular socials, swing gigs and vintage clubs" />
     
     <% if params[:action] == "index" && !@cms_page %> 
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
     
-    <meta property="og:title" content="Swing Out London - Lindy Hop Listings" />
-    <meta property="og:site_name" content="Swing Out London" />
-    <meta property="og:description" content="Swing Out London is a listing of weekly Lindy Hop classes, regular socials, swing gigs and vintage clubs" />
+    <meta property="og:title" content="Swing Out Montréal - Lindy Hop Listings" />
+    <meta property="og:site_name" content="Swing Out Montréal" />
+    <meta property="og:description" content="Swing Out Montréal is a listing of weekly Lindy Hop classes, regular socials, swing gigs and vintage clubs" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.swingoutlondon.co.uk/" />
-    <meta property="og:image" content="http://www.swingoutlondon.co.uk/images/swingoutlondon_og.png" />
+    <meta property="og:url" content="http://swingoutmontreal.heroku.com/" />
+    <meta property="og:image" content="http://swingoutmontreal.heroku.com/images/somontreal_og.png" />
     <meta property="og:email" content="leveretweb@googlemail.com" />
     <meta property="fb:admins" content="dgmstuart"/>
     <% end %>
@@ -29,7 +29,7 @@
     
     <%= csrf_meta_tag %>
     
-    <title>Swing Out London - listings of Lindy Hop swing dance classes and socials</title>
+    <title>Swing Out Montréal - listings of Lindy Hop swing dance classes and socials</title>
 
     <%= stylesheet_link_tag 'main', :media=>"screen and (min-device-width: 481px)"%>
     <%= stylesheet_link_tag 'iphone', :media=>"only screen and (max-device-width: 480px)"%>
@@ -49,8 +49,8 @@
     
         <div id="header">
             <%= heading_hn(params[:action], :class=>"site_title") do %>
-                <em><%= link_to_unless_current 'Swing Out London', :controller => "website", :action => "index" %></em>
-                Listings of Lindy Hop classes and socials in London    
+                <em><%= link_to_unless_current 'Swing Out Montréal', :controller => "website", :action => "index" %></em>
+                Listings of Lindy Hop classes and socials in Montréal    
             <% end %>
             <% if !@cms_page %>
             <p id="last_updated_ago">Last updated <%= time_ago_in_words @last_updated_datetime %> ago</p>
@@ -76,7 +76,7 @@
           
             <%= render :partial => 'website/navigation', :locals => { :nav_id => 'footer_nav' } %>
             
-            <address>Site by <%= mail_to CONTACT_EMAIL, "LeveretWeb", :subject => "Swing Out London"%></address>
+            <address>Site by <%= mail_to CONTACT_EMAIL, "LeveretWeb", :subject => "Swing Out Montréal"%></address>
             
             <% if !@cms_page %>
             <p id="last_updated"> &ndash; last updated at <%=@last_updated_time%> on <%=@last_updated_date%></p>
